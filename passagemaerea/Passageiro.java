@@ -2,7 +2,7 @@ package passagemaerea;
 
 public class Passageiro{
     private String nome;
-    private int telefone;
+    private String telefone;
     private String email;
     private String endereco;
     private Fisica fisica = new Fisica();
@@ -10,14 +10,14 @@ public class Passageiro{
 
     public Passageiro(){
         nome = "";
-        telefone =  0;
+        telefone =  "";
         email = "";
         endereco = "";
         fisica = new Fisica();
         juridica = new Juridica();
     }
 
-    public Passageiro( String nome, int telefone, String email, String endereco , Fisica fisica ,Juridica juridica){
+    public Passageiro( String nome, String telefone, String email, String endereco , Fisica fisica ,Juridica juridica){
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
@@ -34,10 +34,10 @@ public class Passageiro{
         this.nome = nome;
     }
 
-    public int getTelefone(){
+    public String getTelefone(){
         return telefone;  
     }
-    public void setTelefone(int telefone){
+    public void setTelefone(String telefone){
         this.telefone = telefone ; 
     }
 

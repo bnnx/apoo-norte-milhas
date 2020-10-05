@@ -1,19 +1,19 @@
 package passagemaerea;
 
 public class Juridica{
-    private  int cnpj;
+    private String cnpj;
 
     public Juridica(){
-        cnpj = 0;
+        cnpj = "0";
     }
-    public Juridica(int cnpj){
+    public Juridica(String cnpj){
         this.cnpj = cnpj;
     }
 
-    public int getCnpj(){
+    public String getCnpj(){
         return cnpj;
     }
-    public void setCnpj( int cnpj){
+    public void setCnpj(String cnpj){
         this.cnpj = cnpj;
     }
 }
